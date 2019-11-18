@@ -25,14 +25,14 @@ import { ProfileComponent } from './profile/profile.component';
 const routes: Routes = [
   {
     path: '', component: DashboardComponent,
-    // canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
   { path: 'Home', component: HomeComponent },
   { path: 'Dashboard', component: DashboardComponent },
   { path: 'userManagement', component: UserManagementComponent },
   {
     path: 'userProfile', component: UserProfileComponent,
-    // canActivate: [AuthGuard]
+    canActivate: [AuthGuard]
   },
   { path: 'NewPosition', component: AddNewPositionComponent },
   { path: 'NewPost', component: NewPostComponent },
